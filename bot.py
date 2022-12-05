@@ -22,5 +22,13 @@ async def start(message: types.Message):
 # print(session.latest_information_for_symbol(symbol='SOLUSDT'))
 
 
+@dp.message_handler(content_types='text')
+async def get_course(message: types.Message):
+    symbol = message.text.strip() + 'USDT'
+    _result = session.latest_information_for_symbol(symbol=symbol)
+    result = _result['result'][0]['ask_price']
+    await message.answer(result)
+
+
 if __name__ == '__main__':
     executor.start_polling(dp, skip_updates=True)
