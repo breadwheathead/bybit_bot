@@ -51,7 +51,6 @@ def index():
             message = 'Принимается только текст!'
             send_message(chat_id, message)
         return jsonify(r)
-    return
 
 
 if __name__ == '__main__':
