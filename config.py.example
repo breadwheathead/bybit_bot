@@ -1,1 +1,2 @@
-TOKEN = 'your bot token should be here'
+BOT_URL = 'https://api.telegram.org/bot<bot token here>/'
+WEBHOOK_URL = 'https://your.domain'
