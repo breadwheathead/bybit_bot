@@ -3,3 +3,4 @@ __pycache__/
 /tickers.json
 /pybit.log
 /config.py
+/config_aiogram.py
